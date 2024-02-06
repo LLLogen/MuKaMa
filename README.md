@@ -1,4 +1,4 @@
-# MuKaMa：
+# MuKaMa：Multi-Knowledge-aware Matcher
 # Requirements
 
 * Python 3.7.7
@@ -19,3 +19,7 @@ CUDA_VISIBLE_DEVICES=0 python train_MuKaMa.py \
   --batch_size 32 \
   --max_len 128 \
   --lr 3e-5 \
+
+The meaning of the flags:
+* ``--task``: the name of the tasks (see ``configs.json``)
+* ``--batch_size``, ``--max_len``, ``--lr``, ``--n_epochs``: the batch size, max sequence length, learning rate, and the number of epochs
